@@ -1,91 +1,170 @@
 @import url(reset.css);
 
 @font-face {
-    font-family: '2 Roya';
-    src:
-        /* Pretty Modern Browsers */
-        url('../fonts/SROYA.TTF') format('truetype'),
+	font-family: "2 Roya";
+	src:
+        /* Pretty Modern Browsers */ url("../fonts/SROYA.TTF")
+		format("truetype");
 }
 
 body {
-    direction: rtl;
-    font-family: "2 Roya", "2 Kamran", sans-serif;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    width: 100%;
-    height: 100vh;
+	direction: rtl;
+	font-family: "2 Roya", "2 Kamran", sans-serif;
+	background-color: #0093e9;
+	/* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
+	/* background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+
+	width: 100%;
+	/* height: 100vh; */
+}
+
+.d-flex {
+	display: flex;
 }
 
 .header {
-    display: flex;
-    width: 100%;
-    height: 10vh;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	/* background-color: #F6416C; */
+	background-color: #322d58;
+	justify-content: center;
 }
 
-.title {
-    padding: 10px 15px;
-    background-color: #F6416C;
-    border-radius: 20px;
+.navbar {
+	width: 85%;
+	padding: 15px;
 }
 
-.title h1 {
-    color: white;
+.navbar ul {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-list-item {
+	color: mintcream;
+	/* background-color: #f6416bdd; */
+	border-radius: 15px;
+	font-size: 18px;
+	padding: 5px 10px;
+	margin: 0 0 0 70px;
+	transition: 0.3s background-color ease-in-out;
+}
+
+.navbar-list-item:hover {
+	background-color: darkcyan;
+}
+
+#active-page {
+	background-color: rgba(0, 139, 139, 0.429);
 }
 
 table {
-    width: 100%;
-    table-layout: fixed;
+	width: 100%;
+	table-layout: fixed;
 }
 
 .thead {
-    width: 98.8%;
+	width: 100%;
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .tbl-header {
-    background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .tbl-content {
-    height: 590px;
-    overflow-x: auto;
-    margin-top: 0px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	height: 600px;
+	overflow-x: auto;
+	margin-top: 0px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 th {
-    padding: 20px 15px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 19px;
-    color: #fff;
-    text-shadow: black 0px 0px 40px;
-    text-transform: uppercase;
+	padding: 20px 15px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 19px;
+	color: #fff;
+	text-shadow: black 0px 0px 40px;
+	text-transform: uppercase;
 }
 
 td {
-    padding: 15px;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: 500;
-    font-size: 18px;
-    color: #fff;
-    text-shadow: black 0px 0px 40px;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+	padding: 15px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+	text-shadow: black 0px 0px 40px;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 }
-
 
 /* for custom scrollbar for webkit browser*/
 
 ::-webkit-scrollbar {
-    width: 6px;
+	width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* footer styles */
+.footer {
+	padding-top: 50px;
+	background-color: #2a2648;
+	color: #fff;
+}
+
+.footer-row {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.footer-col {
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-title {
+	font-size: 25px;
+}
+
+.footer p {
+	padding: 10px;
+}
+
+.icons {
+	margin-top: 25px;
+	width: 25%;
+	justify-content: space-around;
+}
+
+.footer i {
+	font-size: 25px !important;
+	cursor: pointer;
+}
+
+.copy-right-section {
+	width: 80%;
+	border-top: 1px #777777 solid;
+}
+
+.copy-right {
+	text-align: center;
+}
+
+.tbl-content-team {
+	height: 490px !important;
 }

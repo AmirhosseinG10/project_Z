@@ -11,10 +11,7 @@ body {
     direction: rtl;
     font-family: "2 Roya", "2 Kamran", sans-serif;
     background-color: #0093E9;
-    /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
-    /* background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     width: 100%;
     height: 100vh;
 }
@@ -22,29 +19,19 @@ body {
 .header {
     display: flex;
     width: 100%;
+    height: 10vh;
     align-items: center;
-    background-color: #F6416C;
     justify-content: center;
 }
 
-.navbar {
-    width: 85%;
-    padding: 15px;
+.title {
+    padding: 10px 15px;
+    background-color: #F6416C;
+    border-radius: 20px;
 }
 
-.navbar ul {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-list-item:first-of-type {
-    margin: 0 0 0 20px;
-}
-
-.navbar-list-item {
+.title h1 {
     color: white;
-    font-size: 18px;
-    margin: 0 25px 0 25px;
 }
 
 table {
@@ -53,7 +40,7 @@ table {
 }
 
 .thead {
-    width: 99.4%;
+    width: 98.8%;
 }
 
 .tbl-header {

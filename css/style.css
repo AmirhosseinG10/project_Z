@@ -1,0 +1,104 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: '2 Roya';
+    src:
+        /* Pretty Modern Browsers */
+        url('../fonts/SROYA.TTF') format('truetype'),
+}
+
+body {
+    direction: rtl;
+    font-family: "2 Roya", "2 Kamran", sans-serif;
+    background-color: #0093E9;
+    /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
+    /* background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #F6416C;
+    justify-content: center;
+}
+
+.navbar {
+    width: 85%;
+    padding: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list-item:first-of-type {
+    margin: 0 0 0 20px;
+}
+
+.navbar-list-item {
+    color: white;
+    font-size: 18px;
+    margin: 0 25px 0 25px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.thead {
+    width: 99.4%;
+}
+
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tbl-content {
+    height: 590px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+    color: #fff;
+    text-shadow: black 0px 0px 40px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: black 0px 0px 40px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

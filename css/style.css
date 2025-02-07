@@ -7,9 +7,61 @@
 		format("truetype");
 }
 
+/* <weight>: Use a value from 400 to 700
+<uniquifier>: Use a unique and descriptive class name */
+
+.noto-naskh-arabic {
+	font-family: "Noto Naskh Arabic", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.ibm-plex-sans-arabic-thin {
+	font-family: "IBM Plex Sans Arabic", serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.ibm-plex-sans-arabic-extralight {
+	font-family: "IBM Plex Sans Arabic", serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.ibm-plex-sans-arabic-light {
+	font-family: "IBM Plex Sans Arabic", serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.ibm-plex-sans-arabic-regular {
+	font-family: "IBM Plex Sans Arabic", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.ibm-plex-sans-arabic-medium {
+	font-family: "IBM Plex Sans Arabic", serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.ibm-plex-sans-arabic-semibold {
+	font-family: "IBM Plex Sans Arabic", serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.ibm-plex-sans-arabic-bold {
+	font-family: "IBM Plex Sans Arabic", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
 body {
 	direction: rtl;
-	font-family: "2 Roya", "2 Kamran", sans-serif;
+	font-family: "IBM Plex Sans Arabic", "2 Kamran", serif !important;
 	background-color: #0093e9;
 	/* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
 	/* background-color: #8BC6EC;
@@ -23,28 +75,30 @@ body {
 	display: flex;
 }
 
+.hide {
+	display: none;
+}
+
 .header {
 	display: flex;
 	width: 100%;
 	align-items: center;
-	/* background-color: #F6416C; */
 	background-color: #322d58;
 	justify-content: center;
 }
 
-.navbar {
+.nav {
 	width: 85%;
 	padding: 15px;
 }
 
-.navbar ul {
+.nav ul {
 	display: flex;
 	align-items: center;
 }
 
-.navbar-list-item {
+.nav-list-item {
 	color: mintcream;
-	/* background-color: #f6416bdd; */
 	border-radius: 15px;
 	font-size: 18px;
 	padding: 5px 10px;
@@ -52,8 +106,18 @@ body {
 	transition: 0.3s background-color ease-in-out;
 }
 
-.navbar-list-item:hover {
+.nav-list-item:hover {
 	background-color: darkcyan;
+}
+
+.fa-bars {
+	padding: 10px;
+	font-size: 18px;
+	color: white !important;
+}
+
+.submenu a {
+	display: block;
 }
 
 #active-page {
@@ -85,8 +149,7 @@ table {
 th {
 	padding: 20px 15px;
 	text-align: center;
-	font-weight: 500;
-	font-size: 19px;
+	font-size: 17px;
 	color: #fff;
 	text-shadow: black 0px 0px 40px;
 	text-transform: uppercase;
@@ -96,15 +159,13 @@ td {
 	padding: 15px;
 	text-align: center;
 	vertical-align: middle;
-	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 	color: #fff;
 	text-shadow: black 0px 0px 40px;
 	border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 }
 
 /* for custom scrollbar for webkit browser*/
-
 ::-webkit-scrollbar {
 	width: 6px;
 }
@@ -135,14 +196,16 @@ td {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 10px 0;
 }
 
 .footer-title {
-	font-size: 25px;
+	font-size: 22px;
 }
 
-.footer p {
+.footer_text {
 	padding: 10px;
+	text-align: center;
 }
 
 .icons {
@@ -163,8 +226,101 @@ td {
 
 .copy-right {
 	text-align: center;
+	margin: 10px 0;
 }
 
+.fa-telegram {
+	transition: all 0.3s ease-in-out;
+}
+
+.fa-telegram:hover {
+	color: #0093e9;
+}
+
+/* other Styles */
 .tbl-content-team {
-	height: 490px !important;
+	height: 430px !important;
+}
+
+.card-title {
+	font-size: 20px;
+}
+
+.card-text,
+.btn {
+	font-size: 17px !important;
+}
+
+.btn {
+	font-family: "IBM Plex Sans Arabic", serif !important;
+	font-weight: 300 !important;
+	float: left;
+}
+
+@media all and (max-width: 992px) {
+	.nav {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.nav-list-item {
+		margin: 0 0 0 50px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.nav-list-item {
+		margin: 0 0 0 40px;
+		font-size: 12px;
+	}
+
+	th {
+		font-size: 14px;
+	}
+
+	td {
+		font-size: 14px;
+	}
+
+	.footer-col {
+		width: 50%;
+	}
+
+	.footer_text {
+		font-size: 14px;
+	}
+
+	.copy-right-section {
+		width: 95%;
+		font-size: 12px;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.nav ul {
+		display: none;
+	}
+
+	.nav-list-item {
+		margin: 5px 0;
+		font-size: 14px;
+	}
+
+	.hide {
+		display: block;
+	}
+
+	.footer-row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-col {
+		width: 90%;
+	}
+
+	.footer-col-left {
+		border-top: 1px #777777 solid;
+		padding: 15px 0;
+	}
 }

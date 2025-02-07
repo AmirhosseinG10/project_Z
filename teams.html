@@ -4,22 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z Project Ranking</title>
+    <title>Z Project Team Ranking</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400..700&family=Sofadi+One&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
     <header class="header">
-            <nav class="navbar">
-                <ul>
-                    <li><a class="navbar-list-item" href="index.html">رتبه بندی اعضا</a></li>
-                    <li><a class="navbar-list-item" href="#" id="active-page" >رتبه بندی تیم ها</a></li>
-                    <li><a class="navbar-list-item" href="#">خاطرات ماندگار</a></li>
-                    <li><a class="navbar-list-item" href="#">آرشیو فعالیت ها</a></li>
-                </ul>
-            </nav>
+        <nav class="nav">
+            <section class="dropdown_menu hide">
+                <section class="menu"><i class="fa fa-bars"></i></section>
+                <section class="submenu hide">
+                    <a class="nav-list-item" href="index.html">رتبه بندی اعضا</a>
+                    <a class="nav-list-item" href="teams.html" id="active-page">رتبه بندی تیم ها</a>
+                    <a class="nav-list-item" href="gallery.html">گالری</a>
+                    <a class="nav-list-item" href="#">آرشیو فعالیت ها</a>
+                </section>
+            </section>
+            <ul>
+                <li><a class="nav-list-item" href="index.html">رتبه بندی اعضا</a></li>
+                <li><a class="nav-list-item" href="#" id="active-page">رتبه بندی تیم ها</a></li>
+                <li><a class="nav-list-item" href="gallery.html">گالری</a></li>
+                <li><a class="nav-list-item" href="#">آرشیو فعالیت ها</a></li>
+            </ul>
+        </nav>
     </header>
 
 
@@ -89,14 +103,6 @@
                             <td class="group">-</td>
                             <td class="percent"></td>
                         </tr>
-                        <tr>
-                            <td>8</td>
-                            <td class="name"> گروه هشت</td>
-                            <td class="score">0</td>
-                            <td class="group">-</td>
-                            <td class="percent"></td>
-                        </tr>
-                        <tr>
                     </tbody>
                 </table>
         </section>
@@ -106,7 +112,8 @@
         <section class="footer-row">
             <section class="footer-col footer-col-right">
                 <h2 class="footer-title">درباره ی ما</h2>
-                <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum expedita repellendus iure temporibus saepe consectetur minus vero voluptatibus illum quos?</p>
+                <p class="footer_text">پروژه Z فرصتی برای یادگیری، پیشرفت و ساختن لحظه های ماندنی. پروژه ای که توسط
+                    دانشجویان و برای دانشجویان خلق شده و امید است که اتفاقات زیبایی رقم بخورد</p>
             </section>
             <section class="footer-col footer-col-left">
                 <h2 class="footer-title">راه های ارتباطی</h2>
@@ -116,18 +123,21 @@
                 </section>
             </section>
 
-</section>
+        </section>
+        <section class="footer-row">
+            <section class="copy-right-section">
+                <p class="copy-right">تمامی حقوق مادی و معنوی این سایت متعلق به پروژه Z می باشد و هرگونه کپی برداری
+                    غیرقانونی محسوب خواهد شد</p>
+            </section>
+        </section>
 
-
-<section class="footer-row">
-    <section class="copy-right-section">
-         <p class="copy-right">تمامی حقوق مادی و معنوی این سایت متعلق به اعضای پروژه می باشد و هرگونه کپی برداری غیرقانونی محسوب خواهد شد</p>
-    </section>
-</section>
 
     </footer>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">
+    </script>
 <script src="js/app.js"></script>
 
 </html>

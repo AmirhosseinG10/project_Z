@@ -1,8 +1,10 @@
+const title = document.querySelector(".tbl-content");
 const scores = document.querySelectorAll(".score");
 const names = document.querySelectorAll(".name");
 const group = document.querySelectorAll(".group");
 const percent = document.querySelectorAll(".percent");
-const total_score = 63;
+
+let total_score;
 
 let temp;
 for (let i = 1; i < scores.length; i++) {
@@ -21,10 +23,18 @@ for (let i = 1; i < scores.length; i++) {
 	}
 }
 
+if (title.classList.contains("tbl-content-team")) {
+	total_score = 25;
+} else {
+	total_score = 108;
+}
+
 for (let k = 0; k < names.length; k++) {
 	percent[k].innerHTML =
 		parseInt((Number(scores[k].innerHTML) / total_score) * 100) + "%";
 }
+
+// Teams Ranking
 
 $(function () {
 	$(".fa-bars").click(function () {

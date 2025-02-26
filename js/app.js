@@ -24,9 +24,9 @@ for (let i = 1; i < scores.length; i++) {
 }
 
 if (title.classList.contains("tbl-content-team")) {
-	total_score = 25;
+	total_score = 35;
 } else {
-	total_score = 108;
+	total_score = 111;
 }
 
 for (let k = 0; k < names.length; k++) {

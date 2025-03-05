@@ -24,9 +24,9 @@ for (let i = 1; i < scores.length; i++) {
 }
 
 if (title.classList.contains("tbl-content-team")) {
-	total_score = 35;
+	total_score = 45;
 } else {
-	total_score = 111;
+	total_score = 121;
 }
 
 for (let k = 0; k < names.length; k++) {
@@ -35,7 +35,6 @@ for (let k = 0; k < names.length; k++) {
 }
 
 // Teams Ranking
-
 $(function () {
 	$(".fa-bars").click(function () {
 		$(".submenu").slideToggle(500);
